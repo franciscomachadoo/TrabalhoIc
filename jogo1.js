@@ -52,26 +52,46 @@ if (ValorDoSpan == "acertou") {
   ValorDoScore = ValorDoScore + 50
   Score.textContent = `score: ${ValorDoScore}`
  }
-  
+
+ 
+
+
 
 
  function contador() {
+  
   let contador = 0
 
   intervalor = setInterval(function() {
 
     contador = contador + 1
-      document.getElementById("contador").innerHTML = contador
+      document.getElementById("contador").innerHTML = contador + "s"
         if(contador === 60) {
         clearInterval(intervalor)
         document.getElementById("resposta").hidden = true
         document.getElementById("enviar").hidden = true
         document.getElementById("contador").innerHTML = "ACABOU!!"
+        document.getElementById("btn-reset").hidden = false      
       }
   }, 1000)
+  
 }
 contador()
-});
+
+document.getElementById("btn-reset").addEventListener("click", function() {
+  document.getElementById("btn-reset").hidden = true
+  document.getElementById("resposta").hidden = false
+  document.getElementById("resposta").hidden = false
+})
+})
+
+
+
+
+
+
+
+
 
 
 
