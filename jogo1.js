@@ -1,4 +1,6 @@
 
+
+
 let variavel1 = Math.floor(Math.random()*20 )
 let variavel2 = Math.floor(Math.random()*10 )
 
@@ -12,6 +14,8 @@ console.log(ValorDoScore)
 
 let form = document.querySelector("#formulario");
 let MensagemDeAcertoOuErro= document.querySelector("#Msgacertoerrou")
+
+let intervalor = null
 
 
 form.addEventListener("submit", function(event) {
@@ -52,13 +56,9 @@ if (ValorDoSpan == "acertou") {
   ValorDoScore = ValorDoScore + 50
   Score.textContent = `score: ${ValorDoScore}`
  }
+})
 
- 
-
-
-
-
- function contador() {
+function contador() {
   
   let contador = 0
 
@@ -78,12 +78,15 @@ if (ValorDoSpan == "acertou") {
 }
 contador()
 
+
 document.getElementById("btn-reset").addEventListener("click", function() {
+  clearInterval(intervalor)
   document.getElementById("btn-reset").hidden = true
   document.getElementById("resposta").hidden = false
   document.getElementById("resposta").hidden = false
 })
-})
+
+
 
 
 
