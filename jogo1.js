@@ -66,7 +66,7 @@ function contador() {
 
     contador = contador + 1
       document.getElementById("contador").innerHTML = contador + "s"
-        if(contador === 10) {
+        if(contador === 60) {
         clearInterval(intervalor)
         document.getElementById("resposta").hidden = true
         document.getElementById("enviar").hidden = true
