@@ -66,12 +66,13 @@ function contador() {
 
     contador = contador + 1
       document.getElementById("contador").innerHTML = contador + "s"
-        if(contador === 60) {
+        if(contador === 10) {
         clearInterval(intervalor)
         document.getElementById("resposta").hidden = true
         document.getElementById("enviar").hidden = true
         document.getElementById("contador").innerHTML = "ACABOU!!"
-        document.getElementById("btn-reset").hidden = false      
+        document.getElementById("btn-reset").hidden = false  
+        
       }
   }, 1000)
   
@@ -84,6 +85,9 @@ document.getElementById("btn-reset").addEventListener("click", function() {
   document.getElementById("btn-reset").hidden = true
   document.getElementById("resposta").hidden = false
   document.getElementById("resposta").hidden = false
+  ValorDoScore = 0    
+  Score.textContent = `score: ${ValorDoScore}`
+  document.getElementById("contador").hidden = true
 })
 
 
