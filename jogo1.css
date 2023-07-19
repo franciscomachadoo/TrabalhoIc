@@ -1,0 +1,47 @@
+div {
+    text-align: center;
+    background-color: pink;
+    margin-top: 300px;
+    font-size: 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    height: 35px;
+   outline: none;
+    border-left: hidden;
+    border-top: hidden;
+    border-right:hidden;
+    background-color: transparent;
+   border-bottom: 1px solid white;
+    
+    
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.resposta {
+    padding-top: 10px;
+}
+
+.jogar {
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+}
+
+
+#enviar {
+    display: none;
+}
