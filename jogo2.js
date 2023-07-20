@@ -1,56 +1,26 @@
-var cronometroElemento = document.getElementById('cronometro');
-var iniciarBotao = document.getElementById('iniciar');
-var pararBotao = document.getElementById('parar');
-var reiniciarBotao = document.getElementById('reiniciar');
+const Raizde4 =  document.getElementById("image")
+const Numero2 =  document.getElementById("Number2")
 
-var cronometroID;
-var segundos = 0;
-var minutos = 0;
-var horas = 0;
+let score = 0
 
-function atualizarCronometro() {
-  segundos++;
-  if (segundos >= 60) {
-    segundos = 0;
-    minutos++;
-    if (minutos >= 60) {
-      minutos = 0;
-      horas++;
-    }
+document.getElementById("card").addEventListener("click" , function () {
+  Raizde4.hidden = false
+  verificar()
+})
+
+document.getElementById("card2").addEventListener("click" , function () {
+  Numero2.hidden = false
+  verificar()
+})
+
+function verificar (){
+  if(!Raizde4.hidden && !Numero2.hidden){
+    console.log("eles se completam")
+    score = score + 50
+    document.getElementById("score").innerHTML = score
+
+  } else {
+    console.log("eles não se completam")
   }
-
-  var tempo = padZero(horas) + ':' + padZero(minutos) + ':' + padZero(segundos);
-  cronometroElemento.textContent = tempo;
 }
-
-function iniciarCronometro() {
-  cronometroID = setInterval(atualizarCronometro, 1000);
-  iniciarBotao.disabled = true
-  pararBotao.disabled = false;
-}
-
-function pararCronometro() {
-  clearInterval(cronometroID);
-  iniciarBotao.disabled = false;
-  pararBotao.disabled = true;
-}
-
-function reiniciarCronometro() {
-  clearInterval(cronometroID);
-  segundos = 0;
-  minutos = 0;
-  horas = 0;
-  cronometroElemento.textContent = '00:00:00';
-  iniciarBotao.disabled = false;
-  pararBotao.disabled = true;
-}
-
-function padZero(numero) {
-  return numero < 10 ? '0' + numero : numero;
-}
-
-iniciarBotao.addEventListener('click', iniciarCronometro);
-pararBotao.addEventListener('click', pararCronometro);
-reiniciarBotao.addEventListener('click', reiniciarCronometro);
-
 
