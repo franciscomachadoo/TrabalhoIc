@@ -5,7 +5,7 @@ for (let i = 0; i < 10; i++) {
     numeros.push(-10 + Math.floor(Math.random() * 20));
 }
 
-console.log(numeros)
+//console.log(numeros)
 
 let index = 0 
 
