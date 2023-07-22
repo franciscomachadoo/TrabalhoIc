@@ -19,7 +19,7 @@ var intervalo = setInterval(function(){
         document.getElementById("mensagem").innerHTML = ""
         
       }
-}, 1000)
+}, 2000)
 
     
 
