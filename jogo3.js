@@ -2,7 +2,7 @@ let numeros = []
 
 
 for (let i = 0; i < 10; i++) {
-    numeros.push(-10 + Math.floor(Math.random() * 30));
+    numeros.push(-10 + Math.floor(Math.random() * 20));
 }
 
 console.log(numeros)
@@ -34,7 +34,7 @@ let numero6= numeros[5]
 let numero7= numeros[6]
 let numero8= numeros[7]
 
-console.log(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8)
+//console.log(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8)
 
 
 
@@ -54,7 +54,7 @@ const Tamanhomaximo = 6
 
 let soma = (numero1 + numero2 + numero3 + numero4 + numero5 + numero6, numero7 + numero8)
 
-console.log(soma)
+//console.log(soma)
 
 let Respostas = [
 
