@@ -1,6 +1,4 @@
 
-
-
 let variavel1 = Math.floor(Math.random()*20 )
 let variavel2 = Math.floor(Math.random()*10 )
 

@@ -1,0 +1,99 @@
+let numeros = []
+
+
+for (let i = 0; i < 7; i++) {
+    numeros.push(-10 + Math.floor(Math.random() * 30));
+}
+
+console.log(numeros)
+
+let index = 0 
+
+setInterval(function(){
+    document.getElementById("mensagem").innerHTML = numeros[index]
+
+    index = (index + 1) % numeros.length
+}, 2000)
+
+let numero1= numeros[0]
+let numero2= numeros[1]
+let numero3= numeros[2]
+let numero4= numeros[3]
+let numero5= numeros[4]
+let numero6= numeros[5]
+let numero7= numeros[6]
+
+
+let soma = (numero1 + numero2 + numero3 + numero4 + numero5 + numero6 + numero7)
+
+console.log(soma)
+
+
+function randomizarArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+
+
+let Respostas = [
+
+soma - 1,
+soma - 2,
+soma,
+soma + 1,
+soma + 2,
+soma * -1
+
+]
+
+let RespostasNacaixa = randomizarArray(Respostas)
+
+document.getElementById("caixa1").innerHTML = RespostasNacaixa[0]
+document.getElementById("caixa2").innerHTML = RespostasNacaixa[1]
+document.getElementById("caixa3").innerHTML = RespostasNacaixa[2]
+document.getElementById("caixa4").innerHTML = RespostasNacaixa[3]
+document.getElementById("caixa5").innerHTML = RespostasNacaixa[4]
+document.getElementById("caixa6").innerHTML = RespostasNacaixa[5]
+
+
+ document.getElementById("ErroOuAcerto").innerHTML 
+  
+  const arrayElementosB = document.getElementsByTagName("button");
+
+  for (const elemento of arrayElementosB) {
+    // Adicione um evento de clique (click) para cada botão
+    elemento.addEventListener("click", function() {
+      if (elemento.textContent === soma.toString()) {
+        document.getElementById("ErroOuAcerto").innerHTML = "Acertou!"
+      } else {
+        document.getElementById("ErroOuAcerto").innerHTML = "Errou!"
+      }
+    });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
