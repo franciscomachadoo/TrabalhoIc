@@ -68,6 +68,8 @@ soma * -1
 ]
 
 const RespostasNacaixa = randomizarArray(Respostas)
+
+
 document.getElementById("caixa1").innerHTML = RespostasNacaixa[0]
 document.getElementById("caixa2").innerHTML = RespostasNacaixa[1]
 document.getElementById("caixa3").innerHTML = RespostasNacaixa[2]
@@ -90,3 +92,4 @@ document.getElementById("caixa6").innerHTML = RespostasNacaixa[5]
       }
     });
   }
+

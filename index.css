@@ -1,11 +1,479 @@
-.games {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+
+
+/*Página1*/
+
+.Hero {
+    background-color: #000624;
+    width: 90rem;
+    height:54.625rem ;
+    
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 9.19rem;
+}
+
+.content {
+    width: 624px;
+    height: 360px;
+    
+    margin-left: 6.87rem;
+
+}
+
+
+
+.minitexto {
+    color: #BCBDCB;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.TextodeHero {
+    color: #BCBDCB;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.ContainerTextoDeHero {
+    margin-top: 2.25rem;
+}
+
+.containerDeTittle {
+    width: 39rem;
+    height: 14.8125rem;
+}
+
+.tittle {
+    color: #F0F2FA;
+font-family: Inter;
+font-size: 65px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.botao {
+    background: #003855;
+   
+    margin-top: 2.81rem;
+    height:5rem;
+    width:37rem;
+    padding: 1.625rem 9.4375rem 1.5625rem 9.4375rem;
+    border: none;
+    border-radius: 0.9375rem;
+    padding-left: 9.44rem;
+    padding-right: 9.44rem;
+    
+}
+
+.Queroaprenderjogando {
+    color: #F0F2FA;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 2.81rem;
+
+
+}
+
+.textoDeBotao {
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.ImagemDeHero {
+    
+    width: 32.4375rem;
+    height: 32.4375rem;
+    
+}
+
+/*Faixa 1*/
+
+.faixa1 {
+    background: #003855;
+    
+    display: flex;
+    width: 90rem;
+    padding: 5.375rem 6.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.agrupador {
+    display: flex;
+    align-items: flex-start;
+    gap: 11.8125rem;
+    margin-left: -1rem;
+}
+.divdofaixa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 17.625rem;
+   height: 7.9375rem;
+   
+    
+}
+
+.cincodofaixa1 {
+    color: #F0F2FA;
+text-align: center;
+font-family: Inter;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.Primeirotextodofaixa1 {
+    color: #BCBDCB;
+text-align: center;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.div2dofaixa1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 17.625rem;
+       height: 7.9375rem;
+      
+}
+
+.umdofaixa1 {
+    color: #F0F2FA;
+text-align: center;
+font-family: Inter;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.segundotextodofaixa1 {
+    color: #BCBDCB;
+text-align: center;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.div3dofaixa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 17.625rem;
+   height: 7.9375rem;
+}
+
+.segundo1dofaixa1 {
+    color: #F0F2FA;
+font-family: Inter;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+
+}
+
+.terceirotextodofaixa1 {
+    color: #BCBDCB;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*causas*/ 
+
+.causas {
+    width: 90rem;
+    height: 50rem;
+    background: var(--color-background, #010624);
+}
+
+.containertittle2 {
+    padding-top: 7.69rem;
+}
+
+.tittle2 {
+    width: 76rem;
+    color: #F0F2FA;
+text-align: center;
+font-family: Inter;
+font-size: 3.125rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 6.50rem;
+margin-bottom: 3rem;
+margin-top: -3--rem;
+}
+
+
+.minitexto2 {
+    width: 76rem;
+height: 5.625rem;
+flex-shrink: 0;
+color: #BCBDCB;
+text-align: center;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 7rem;
+}
+
+
+.masosjogosvirtuaispodemajudar {
+    
+    width: 80rem;
+    height: 22.8125rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.8125rem;
+    padding-left: 7rem;
+    padding-right: 32.94rem;
+
+}
+
+.tittle3{
+    width: 39rem;
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 6rem;
+    
+    padding-bottom: 1.81;
+}
+
+.frase1, .frase2, .frase3 {
+    color: #BCBDCB;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.frase1, .frase2 {
+    padding-bottom: 2.25rem;
+}
+
+
+/*VAMOSJOGAR*/
+
+.vamosjogar {
+    width: 90rem;
+    height: 61.6875rem;
+    background: #003855;
+}
+
+.containervamosjogar {
+    padding-top: 5.88rem;
+    padding-left: 7rem;
+    padding-bottom: 2rem;
+}
+.tittle4 {
+    width: 39rem;
+    color: #F0F2FA;
+font-family: Inter;
+font-size: 4.0625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 2rem;
+}
+
+.minitexto3 {
+    width: 39rem;
+    color: #BCBDCB;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.jogodamemoria {
+   
+height: 32rem;
+flex-direction: column;
+gap: 0.8125rem;
+flex-shrink: 0;
+background: #000624;
+width:24rem ;
+height: 32rem;
+border-radius: 10px;
+margin-left: 7rem;
+margin-top: 3rem;
+display:flex;
+margin-right:1.76rem;
+}
+
+.imagem {
+    width: 24rem;
+    height: 15.1875rem;
+    flex-shrink: 0;
     border-radius: 10px;
 }
 
-.titulo {
-    text-align: center;
+
+.tittle5 {
+    color: #F0F2FA;
+
+font-family: Inter;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-bottom: 0.81rem;
+margin-left: 5rem;
 }
+
+
+
+.minitexto4{
+    width: 16.125rem;
+    height: 5.4375rem;
+    color: #BCBDCB;
+text-align: center;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 3.65rem;
+margin-bottom: 1rem;
+}
+
+.buttonmemoria {
+    display: flex;
+    height: 3.3875rem;
+    width: 19.8125rem;
+    padding: 0.875rem 0rem 0.8125rem 0rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F0F2FA;
+    margin-left: 2rem;
+}
+
+.buttonofmemoria {
+   color: #F0F2FA;
+   background: none;
+   border: none;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.Quizmatematico {
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 2.625rem;
+width: 23.7355rem;
+height: 31.73rem;
+background: #010624;
+border-radius: 10px;
+flex: 1;
+margin-top: 3.2rem;
+
+
+
+
+}
+
+.minitexto5 {
+    height: 5.43rem;
+    width: 16.125rem;
+    color: #BCBDCB;
+text-align: center;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.imgquiz {
+    border-radius: 10px;
+    width: 20.7355rem;
+    height: 12.61181rem;
+}
+
+.agrupador2 {
+    display: flex;
+}
+
+.tittle6 {
+    color: #F0F2FA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 0.81rem;
+   
+}
+
+
+
+
+
+
+
+
 
 
 
