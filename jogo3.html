@@ -4,26 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>jogo3</title>
+  <link rel="stylesheet" href="jogo3.css">
 </head>
 <body>
+ <div class="container">
 
-  
-  <span id="mensagem"></span>   
-
-
+  <div class="tittles">
 
 
-  <button id="caixa1"></button> <br>
-  <button id="caixa2"></button> <br>
-  <button id="caixa3"></button> <br>
-  <button id="caixa4"></button> <br>
-  <button id="caixa5"></button> <br>
-  <button id="caixa6"></button> <br>
-  <span id="ErroOuAcerto"></span>
+    <p class="tittle1">Você tem a mente rápida? Faça os cálculos de cabeça!</p>
+
+
+    <p class="tittle2">Quantos cálculos você consegue fazer sem calculadora?
+      <br>
+      <br>
+      Quer reiniciar? Aperte F5!
+    </p>
+
+
+  </div>
+  <div class="content">
+    <div class="contentofmensage">
+      <p id="mensagem" class="mensagem"></p>
+    </div>
+    
+    <div class="pergunta">
+      <h3>QUAL É A RESPOSTA?</h3>
+    </div>
+    <div class="contentofbuttons">
+      <button id="caixa1" class="buttons"></button> 
+      <button id="caixa2" class="buttons"></button> 
+      <button id="caixa3" class="buttons"></button> 
+      <button id="caixa4" class="buttons" ></button>
+      <button id="caixa5" class="buttons" ></button> 
+      <button id="caixa6" class="buttons" ></button>
+    </div>
+    
+    <span id="ErroOuAcerto" class="ErroeAcerto"></span>
+  </div>
+
+ </div>
+
  
 
 
   <script src="jogo3.js"></script>
+
+  
 
  
 </body>

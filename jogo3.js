@@ -1,31 +1,34 @@
-let numeros = []
-
+let numeros = [];
 
 for (let i = 0; i < 10; i++) {
-    numeros.push(-10 + Math.floor(Math.random() * 20));
+  numeros.push(-10 + Math.floor(Math.random() * 20));
 }
 
-//console.log(numeros)
+let index = 0;
+const cores = ['white', 'lightgrey']; // Adicione mais cores se desejar
 
-let index = 0 
+var intervalo = setInterval(function () {
+  document.getElementById('mensagem').innerHTML = numeros[index];
+  document.getElementById('mensagem').style.color = cores[index % cores.length];
 
-var intervalo = setInterval(function(){
-    document.getElementById("mensagem").innerHTML = numeros[index]
+  index = (index + 1) % numeros.length;
 
-    index = (index + 1) % numeros.length
+  if (index === numeros.length - 1) {
+    clearInterval(intervalo);
+    document.getElementById('mensagem').innerHTML = '';
+  }
+}, 2000);
+console.log(numeros)
 
-    if (index === numeros.length - 1) {
-        clearInterval(intervalo);
-        document.getElementById("mensagem").innerHTML = ""
-        
-      }
-}, 2000)
 
-    
+const mensagem = document.getElementById("mensagem") 
+
 
 
 
 let numero1= numeros[0]
+
+
 let numero2= numeros[1]
 let numero3= numeros[2]
 let numero4= numeros[3]
@@ -34,7 +37,8 @@ let numero6= numeros[5]
 let numero7= numeros[6]
 let numero8= numeros[7]
 
-//console.log(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8)
+
+console.log(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8)
 
 
 
@@ -52,9 +56,10 @@ function randomizarArray(array) {
 
 const Tamanhomaximo = 6
 
-let soma = (numero1 + numero2 + numero3 + numero4 + numero5 + numero6, numero7 + numero8)
+let soma = ((numero1) + (numero2) + (numero3) + (numero4) + 
+(numero5) + (numero6) + (numero7) + (numero8))
 
-//console.log(soma)
+console.log(soma)
 
 let Respostas = [
 
@@ -80,7 +85,7 @@ document.getElementById("caixa6").innerHTML = RespostasNacaixa[5]
 
  document.getElementById("ErroOuAcerto").innerHTML 
   
-  const arrayElementosB = document.getElementsByTagName("button");
+  let arrayElementosB = document.getElementsByTagName("button");
 
   for (const elemento of arrayElementosB) {
     // Adicione um evento de clique (click) para cada botão
@@ -93,3 +98,8 @@ document.getElementById("caixa6").innerHTML = RespostasNacaixa[5]
     });
   }
 
+
+  const resetButton = document.getElementById("resetButton");
+
+  
+  

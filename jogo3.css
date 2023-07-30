@@ -1,3 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
-     text-align: center; 
- } 
+    width: 90rem;
+    height: 45.125rem;
+    background: #010624;
+}
+
+.tittles {
+    margin-top: 9.31rem;
+    margin-left: 7rem ;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tittle1 {
+    color: #F0F2FA;font-family: Inter;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 30.5rem;
+}
+
+.tittle2 {
+    width: 25.8125rem;
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content {
+    display: inline-block;
+    position:absolute;
+    width: 32.5rem;
+    height: 33.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid #F0F2FA;
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+.contentofmensage {
+    display: flex;
+    height: 5rem;
+    padding: 0.75rem 1.3125rem 0.6875rem 1.3125rem;
+    justify-content: center;
+    align-items: center;
+    background: #003855;
+    margin-top: 2rem;
+}
+.mensagem {
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0.75rem;
+    background: #003855;
+    text-align: center;
+}
+
+.pergunta {
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 2rem;
+}
+.contentofbuttons {
+    display: flex;
+    width: 18.75rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0.875rem 0.9375rem;
+    flex-wrap: wrap;
+    border-radius: 0.75rem;
+    margin-left:6.88rem;
+    margin-top: 3.25rem;
+}
+.buttons {
+    display: inline-block;
+    width: 5.625rem;
+    height: 5.1875rem;
+    padding: 1.6875rem 1.8125rem 1.6875rem 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #F0F2FA;  
+    color: var(--color-background, #010624);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ErroeAcerto {
+    display: flex;  
+    position: absolute;
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 13.9rem;
+    margin-top: 2rem;
+}
