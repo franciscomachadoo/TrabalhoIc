@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    width: 90rem;
+    height: 45.125rem;
+    background: #010624;
+}
+
+.tittles {
+    margin-top: 9.31rem;
+    margin-left: 7rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tittle1 {
+    width: 30.5rem;
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tittle2  {
+    width: 25.8125rem;
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.content {
+    position: absolute;
+    width: 32.5rem;
+    height: 33.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid #F0F2FA;
+    margin-left: 50.5rem;
+    margin-top: -15rem
+}
+
+.score {
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.datas {
+    align-items: flex-start;
+    gap: 0.4375rem;
+    margin-top: 1.87rem;
+    margin-left: 2.37rem;
+    height: 4rem;
+}
+
+.Msgacertoerrou {
+    height: 3rem;
+    color: #F0F2FA;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+margin-left: 7.875rem;   
+}
+
+.contador {
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+   
+}
+
+.numeros {
+    display: flex;
+    padding: 1.625rem 4.3125rem 1.5625rem 4.3125rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    background: #003855;
+    gap: 1rem;
+}
+
+.numero {
+    color: #F0F2FA;
+    font-family: Inter;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+line-height: normal;
+}
+
+.informações {
+    position: absolute;
+    align-items: center;
+    gap: 2.0625rem;
+    margin-top: 10.44rem;
+    margin-left: 4.7rem;
+    margin-top: 3rem;
+}
+
+.resposta {
+    width: 23.625rem;
+    background: none;
+    border-bottom: 0.0625rem solid #F0F2FA;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #F0F2FA;
+    
+}
+
+.btn-reset {
+    background: #003855;
+    border-radius: 0.20rem;
+    border:0.0625rem solid #F0F2FA;
+    position: absolute;
+    margin-left:7.875rem ;
+    color: white;
+    padding: 0.75rem;
+    
+}

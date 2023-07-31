@@ -24,11 +24,11 @@ form.addEventListener("submit", function(event) {
   console.log(texto); 
 
 if (parseInt(texto) === variavel1 + variavel2) {
-  MensagemDeAcertoOuErro.textContent= "acertou"
+  MensagemDeAcertoOuErro.textContent= "ACERTOU!"
 } 
 else 
 {
-  MensagemDeAcertoOuErro.textContent= "errou, tente novamente"
+  MensagemDeAcertoOuErro.textContent= "Errou, tente novamente!"
 }
 setTimeout(function() { 
   MensagemDeAcertoOuErro.textContent= "";
@@ -37,7 +37,7 @@ setTimeout(function() {
 
 let ValorDoSpan = MensagemDeAcertoOuErro.textContent
 
-if (ValorDoSpan == "acertou") {
+if (ValorDoSpan == "ACERTOU!") {
   setTimeout(function() {
     document.getElementById("numero1").textContent = "", 
     document.getElementById("numero2").textContent = ""
@@ -50,7 +50,7 @@ if (ValorDoSpan == "acertou") {
   },150)  
 }
 
-if (ValorDoSpan == "acertou") {
+if (ValorDoSpan == "ACERTOU!") {
   ValorDoScore = ValorDoScore + 50
   Score.textContent = `score: ${ValorDoScore}`
  }
@@ -63,8 +63,8 @@ function contador() {
   intervalor = setInterval(function() {
 
     contador = contador + 1
-      document.getElementById("contador").innerHTML = contador + "s"
-        if(contador === 60) {
+      document.getElementById("contador").innerHTML = `Tempo decorrido: ${contador}`
+        if(contador === 5) {
         clearInterval(intervalor)
         document.getElementById("resposta").hidden = true
         document.getElementById("enviar").hidden = true
@@ -83,9 +83,11 @@ document.getElementById("btn-reset").addEventListener("click", function() {
   document.getElementById("btn-reset").hidden = true
   document.getElementById("resposta").hidden = false
   document.getElementById("resposta").hidden = false
+  document.getElementById("contador").hidden = false
   ValorDoScore = 0    
   Score.textContent = `score: ${ValorDoScore}`
-  document.getElementById("contador").hidden = true
+  contador()
+  
 })
 
 

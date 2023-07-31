@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="jogo1.css">
 </head>
 <body>
-    <div>
+    <div class="container">
+        <div class="tittles">
+            <p class="tittle1">Calcule o mais rápido que puder!</p>
+
+            <p class="tittle2">Calcule o mais rápido que conseguir em 60seg frenéticos, acumule pontos e desafie os seus amigos!</p>
+        </div>
+
+        <div class="content">
+            <form id="formulario">
+
+                <div class="datas">
+                    <p class="score" id="score"></p>
+                    <p id="contador" class="contador"></p>
+                </div>
+
+                <div class="informações">
+                    <p id="Msgacertoerrou" class="Msgacertoerrou" ></p>
+                
+                    <div class="numeros">
+                        <p id="numero1" class="numero"></p>
+                        <p id="operador"class="numero">+</p>
+                        <p id="numero2" class="numero"></p>
+                    </div>
+                   
+                    <br>
+    
+                    <input type="number" id="resposta" class="resposta">
+                    <input type="submit" id="enviar" value="enviar" hidden>
+                    <button id="btn-reset" class ="btn-reset" hidden> Jogar de novo!</button>
+
+                </div>
+                
+            </form>
         
-        <form id="formulario">
-            <span id="score"></span>
-            <br>
-            <p class="resposta">Resposta</p>  
-            <input type="number" id="resposta">
-            <input type="submit" id="enviar" value="enviar" >
-          </form>
-          <p>Números sorteados</p>
-          <span id="numero1"></span>
-          <span id="operador">+</span>
-          <span id="numero2"></span>
-          <br>
-          <p>Acertou ou errou?</p>
-          <span id="Msgacertoerrou"></span>
-          <br>
-          <span id="contador"></span>
-          <button id="btn-reset" hidden>Button reset</button>
-        
+              
+        </div>
     </div>
+        
+       
 
    
    
