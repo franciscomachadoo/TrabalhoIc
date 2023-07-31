@@ -64,7 +64,7 @@ function contador() {
 
     contador = contador + 1
       document.getElementById("contador").innerHTML = `Tempo decorrido: ${contador}`
-        if(contador === 5) {
+        if(contador === 60) {
         clearInterval(intervalor)
         document.getElementById("resposta").hidden = true
         document.getElementById("enviar").hidden = true
